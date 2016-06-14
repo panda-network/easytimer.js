@@ -9,6 +9,7 @@
   },
   "scripts": {
     "preversion": "grunt build && git add dist/easytimer.min.js",
+    "postversion": "git push && git push --tags",
     "start": "http-server -a 0.0.0.0 -p 8000",
     "test": "mocha"
   },
